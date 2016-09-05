@@ -11,10 +11,22 @@
 
 def print_and_sort(array)
   output_string = ""
+  revised_array = []
+
   array.each do |element|
-    output_string = output_string + " " + element
+  	element = element.to_s
+  	revised_array << element
   end
+
+  array = revised_array
+
+  array.each do |element|
+    output_string = output_string + " " + element.to_s
+  end
+
   puts output_string
+  #p array = array.sort!
+  #array.sort_by {|x| x.to_s}
   array.sort
 end
 

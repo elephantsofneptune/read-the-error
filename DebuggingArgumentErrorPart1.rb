@@ -9,6 +9,7 @@ def mean(numbers)
 end
 
 # This will throw an error. Change this line so that it works.
-sample_avg = mean(5, 3, 6, 10)
+#sample_avg = mean(5, 3, 6, 10)
 
 #comment out the above code with your new solution
+sample_avg = mean([5, 3, 6, 10]) #it accepts one value, so it's one array of numbers
